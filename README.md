@@ -74,3 +74,7 @@ The cache is configured to expire after 1 hour (`proxy_cache_valid 200 60m`). Re
 ```bash
 docker-compose restart nginx-proxy
 ```
+
+## References
+
+- [HackerOne Report #1160407: Cache Poisoning via X-HTTP-Method-Override](https://hackerone.com/reports/1160407)
