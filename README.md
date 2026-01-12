@@ -55,10 +55,16 @@ Use `curl` to poison the cache. We will ask GCS to treat our request as a `HEAD`
 curl -v -H "X-HTTP-Method-Override: HEAD" http://localhost:8080/index.html
 ```
 
+![Attacker Request](readme-images/attacker-request.png)
+
+
 You should see an empty response body.
 
 ### 3. Verify Poisoning
 If you visit `http://localhost:8080/index.html` in your browser, you will see a blank page (or the empty body).
+
+![User Request](readme-images/user-request.png)
+
 
 
 
